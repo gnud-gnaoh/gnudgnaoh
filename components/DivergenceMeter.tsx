@@ -10,10 +10,10 @@ export default function DivergenceMeter() {
     const script = document.createElement('script');
     script.src = '../lib/jquery-3.7.1.min.js';
     script.onload = () => {
-      const $ = (window as any).$;
+      const $ = (window as unknown as {$ : JQueryStatic}).$;
       const TWIDTH = 400;
-      let shiftH = 0;
-      let shiftW = 0;
+      const shiftH = 0;
+      const shiftW = 0;
 
       const c = canvasRef.current;
       if (!c) return;
@@ -63,7 +63,7 @@ export default function DivergenceMeter() {
       function blink(greyCVS: HTMLCanvasElement, shinyCVS: HTMLCanvasElement) {
         let factor = 0;
         const TIME = 20;
-        let intUp: NodeJS.Timeout;
+        const intUp: NodeJS.Timeout = setTimeout(() => {}, 0); // Initialize to avoid TS error
         let intDown: NodeJS.Timeout;
 
         const createImage = () => {
@@ -127,7 +127,9 @@ export default function DivergenceMeter() {
         try {
           clearInterval(loop0);
           clearTimeout(blink0);
-        } catch (err) {}
+        } catch (err) {
+          console.log(err);
+        }
         loop0 = setInterval(loop, 50);
         blink0 = setTimeout(stopLoop, 3000);
       }
