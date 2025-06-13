@@ -62,7 +62,7 @@ export default function DivergenceMeter() {
 
       function blink(greyCVS: HTMLCanvasElement, shinyCVS: HTMLCanvasElement) {
         let factor = 0;
-        const TIME = 20;
+        const TIME = 5;
         let intUp: NodeJS.Timeout = setTimeout(() => {}, 0); // Initialize to avoid TS error
         let intDown: NodeJS.Timeout;
 
@@ -131,7 +131,7 @@ export default function DivergenceMeter() {
           console.log(err);
         }
         loop0 = setInterval(loop, 50);
-        blink0 = setTimeout(stopLoop, 3000);
+        blink0 = setTimeout(stopLoop, 1500);
       }
 
       img.onload = () => {
@@ -151,15 +151,17 @@ export default function DivergenceMeter() {
 
   return (
     <div>
-      <div>
+      <div id="cwl">
         <canvas ref={canvasRef} id="myCanvas" width={400} height={135}>
         </canvas>
       </div>
+      {/* 
       <div>
         <button type="button" id="cwl">
           send D-Mail!
         </button>
       </div>
+      */}
     </div>
   );
 }
