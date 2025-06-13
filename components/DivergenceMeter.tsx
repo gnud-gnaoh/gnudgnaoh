@@ -63,7 +63,7 @@ export default function DivergenceMeter() {
       function blink(greyCVS: HTMLCanvasElement, shinyCVS: HTMLCanvasElement) {
         let factor = 0;
         const TIME = 20;
-        const intUp: NodeJS.Timeout = setTimeout(() => {}, 0); // Initialize to avoid TS error
+        let intUp: NodeJS.Timeout = setTimeout(() => {}, 0); // Initialize to avoid TS error
         let intDown: NodeJS.Timeout;
 
         const createImage = () => {
