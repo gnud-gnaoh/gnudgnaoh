@@ -8,7 +8,7 @@ export default function DivergenceMeter() {
 
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = '../lib/jquery-3.7.1.min.js';
+    script.src = 'lib/jquery-3.7.1.min.js';
     script.onload = () => {
       const $ = (window as unknown as {$ : JQueryStatic}).$;
       const TWIDTH = 400;
@@ -22,7 +22,7 @@ export default function DivergenceMeter() {
       if (!cxt) return;
 
       const img = new Image();
-      img.src = '../images/numbers.png';
+      img.src = 'images/numbers.png';
 
       let arr: number[] = [];
 
