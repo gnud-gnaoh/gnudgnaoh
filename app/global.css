@@ -1,3 +1,8 @@
+body {
+    background: black;
+    color: white;
+}
+
 @font-face {
     font-family: 'OsloII';
     src: url('../public/fonts/OsloII.woff2') format('woff2');
@@ -15,6 +20,13 @@
 @font-face {
     font-family: 'SilkRemington';
     src: url('../public/fonts/SilkRemington-SBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FZKai-Z03';
+    src: url('../public/fonts/FZKTK--GBK1-0.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
