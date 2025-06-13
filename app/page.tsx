@@ -1,4 +1,5 @@
 import styles from './about.module.css';
+import DivergenceMeter from '@components/DivergenceMeter';
 
 export default function Page() {
   return <div>
@@ -8,5 +9,6 @@ export default function Page() {
       <h4 className={styles.small_text}> (Name subject to change) </h4>
 		</hgroup>
     <h1 style={{ fontFamily: "'SilkRemington', sans-serif" }}>El Psy Kongroo</h1>
+    <DivergenceMeter />
   </div>
 }
