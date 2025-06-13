@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'OsloII';
-    src: url('/fonts/OsloII.woff2') format('woff2');
+    src: url('../public/fonts/OsloII.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'OsloII';
-    src: url('/fonts/OsloII-Bold.woff2') format('woff2');
+    src: url('../public/fonts/OsloII-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'SilkRemington';
-    src: url('/fonts/SilkRemington-SBold.woff2') format('woff2');
+    src: url('../public/fonts/SilkRemington-SBold.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
