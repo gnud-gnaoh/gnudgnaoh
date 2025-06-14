@@ -8,7 +8,7 @@ export default function Page() {
 			<h1 className={styles.big_text}>Personal; <span className={styles.capital}>W</span>ebsite</h1>
       <h4 className={styles.small_text}> (Name subject to change) </h4>
 		</hgroup>
-    <h1 style={{ fontFamily: "'SilkRemington', sans-serif" }}>El Psy Kongroo</h1>
+    <h1>El Psy Kongroo</h1>
     <DivergenceMeter />
   </div>
 }
