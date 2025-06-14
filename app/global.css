@@ -3,6 +3,11 @@ body {
     color: white;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 @font-face {
     font-family: 'OsloII';
     src: url('../public/fonts/OsloII.woff2') format('woff2');
