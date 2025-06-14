@@ -1,5 +1,5 @@
 import '/app/global.css';
-import Header from '../components/Header.tsx';
+import Header from '../components/Header';
 
 export default function RootLayout({
   children,
